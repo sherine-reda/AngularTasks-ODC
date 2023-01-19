@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-12 col-md-4 ps-5" *ngFor="let item of users let i = index" >
+      <div class="card alert alert-primary">
+          <div class="card-body ">
+            <h1>User {{i+1}}</h1>
+              <h4>id: {{item._id}}</h4>
+              <p>FirstName: {{item.fName}}</p>
+              <p>LastName: {{item.lName}}</p>
+              <p>Age: {{item.age}}</p>
+              <p>Email: {{item.email}}</p>
+              <p>RoleId: {{item.roleId}}</p>
+              <p>Status: {{item.status}}</p>
+          </div>
+      </div>
+  </div>
+</div>
+
